@@ -6,70 +6,88 @@
     <title>form with ul</title>
   </head>
   <body>
-    <h1>My Feedback Form</h1>
+    <h1>Register Form</h1>
     <ul>
       <form action="">
         <li>
           <label for="uname">Name:</label>
-          <input type="text" name="unmae" id="uname" />
+          <input
+            type="text"
+            name="unmae"
+            id="uname"
+            placeholder=" Your Full Name"
+          />
+          <br /><br />
         </li>
         <li>
           <label for="mail">Email:</label>
-          <input type="email" name="mail" id="mail" />
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Your Email"
+          /><br /><br />
         </li>
         <li>
           <label for="pass">Password:</label>
-          <input type="password" name="pass" id="pass" /><br /><br />
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Create New Password"
+          />
+          <br /><br />
         </li>
 
-        <li>Please check all the emotions that apply to you:</li>
+        <li>Please select the Subject:</li>
         <ul>
           <li>
-            <label for="ang">Angry</label>
+            <label for="ang">English</label>
             <input type="checkbox" name="ang" id="ang" />
           </li>
           <li>
-            <label for="ang">Sad</label>
+            <label for="ang">Maths</label>
             <input type="checkbox" name="ang" id="ang" />
           </li>
           <li>
-            <label for="ang">Happy</label>
+            <label for="ang">Science</label>
             <input type="checkbox" name="ang" id="ang" />
           </li>
           <li>
-            <label for="ang">Ambivalent</label>
+            <label for="ang">History</label>
             <input type="checkbox" name="ang" id="ang" />
           </li>
         </ul>
-        <li>How satisfied were you with our service:</li>
+        <br />
+
+        <li>Gender:</li>
         <ul>
           <li>
-            <label for="ang">Very Satisfied</label>
-            <input type="radio" name="ang" id="ang" />
+            <label for="gen">Male</label>
+            <input type="radio" name="gen" id="gen" />
           </li>
           <li>
-            <label for="ang">Satisfied</label>
-            <input type="radio" name="ang" id="ang" />
+            <label for="gen">Female</label>
+            <input type="radio" name="gen" id="gen" />
           </li>
           <li>
-            <label for="ang">Didn't Care</label>
-            <input type="radio" name="ang" id="ang" />
-          </li>
-          <li>
-            <label for="ang">Dissatified</label>
-            <input type="radio" name="ang" id="ang" />
+            <label for="gen">Others</label>
+            <input type="radio" name="gen" id="gen" />
           </li>
         </ul>
+        <br />
         <li>
-          <label for="fc">Future comments:</label>
-          <textarea name="fc" id="fc" cols="30" rows="3"></textarea>
-        </li>
-        <li>
-          <label for="bio">Bio Photos</label>
+          <label for="bio"></label>Upload Documents:
           <input type="text" name="bio" id="bio" />
           <input type="file" name="bio" id="bio" />
         </li>
-        <li><input type="submit" /></li>
+        <br />
+        <li>
+          <input type="submit" />
+          <a href="file:///d%3A/deepak%20github/HTML/practice/loginform.html"
+            ><input type="button" value="Login Page"
+          /></a>
+        </li>
       </form>
     </ul>
   </body>
