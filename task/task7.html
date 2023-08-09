@@ -3,42 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Rimberio Royal Hotel</title>
+    <link rel="icon" href="../images/hotel logo.png">
   </head>
   <body>
     <table border="0" width="100%">
       <tr height="100px">
         <td width="20%">
-          <img
+          <a href="file:///d%3A/deepak%20github/HTML/task/task7.html">
+            <img
             src="../images/hotel logo.png"
             alt=""
             height="100px"
             width="100px"
           />
+          </a>
+         
         </td>
-        <td width="20%"><a href="#about">about us</a></td>
-        <td width="20%">menu</td>
-        <td width="20%">reservation</td>
-        <td width="20%"><a href="#contact">contact us</a></td>
+        <td width="20%"><a href="#about">About us</a></td>
+        <td width="20%"><a href="#menu">Menu</a></td>
+        <td width="20%"><a href="#booking">Booking</a></td>
+        <td width="20%"><a href="#contact">Contact Us</a></td>
       </tr>
     </table>
     <table width="100%">
-      <tr>
+      <tr>  
         <td>
-          <img
-            src="../images/hotel photo.jpg"
-            alt=""
-            width="100%"
-            height="600px"
-          />
-        </td>
+          <video src="../images/videoofhotel.mp4" width="100%"
+          height="100%" muted loop autoplay></video>
+          </td>
+         
       </tr>
     </table>
-    <hr>
+    <hr id="about">
 
-    <section>
-      <div align="center" id="about" >
-        <h1> ABOUT US</h1>
+    <section >
+      <div align="center"  >
+        <h1> <marquee behavior="" direction="right">ABOUT US</marquee></h1>
         <hr>
         <h2>WELCOME TO  RIMBERIO
             ROYAL HOTEL</h2>
@@ -68,16 +69,147 @@
 
                 Dining at RIMBERIO
                 ROYAL HOTEL is a culinary journey that awakens the senses. Our expert chefs craft delectable dishes using the finest locally sourced ingredients, ensuring a symphony of flavors that delights even the most discerning palate. Whether you're savoring a gourmet breakfast, enjoying a leisurely lunch, or indulging in a sumptuous dinner, each bite is an experience to cherish.</p>   
-        
+       <h2>LUXURIOUS COMFORT</h2>
+                <p>Step into a world of indulgence where each room is a sanctuary of comfort and style. Our spacious accommodations are adorned with the finest furnishings and modern conveniences, creating a seamless blend of opulence and functionality</p>
             </div>
-            <hr>
-            <div id="contact">
-                <h1><center>CONTACT US</center></h1>
+          </section>
+            <hr  id="menu">
+            <section align="center" >
+              <div >
+                <h1><marquee behavior="" direction="">MENU</marquee></h1>
                 <hr>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29372.56924719588!2d72.49212917431645!3d23.039513000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848ac8a8047b%3A0xb41fbacdf2139ecb!2sHyatt%20Ahmedabad!5e0!3m2!1sen!2sin!4v1691509114778!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <table width="100%" height="100px">
+                  <tr >
+                    <td width="40%"><a href="../menu/breakfast.html" target="breakfast">BREAKFAST</a></td>
+                    <td width="60%" rowspan="3"><iframe src="" frameborder="1" name="breakfast" width="1000px" height="500px"></iframe></td>
+                  </tr>
+                  <tr>
+                    <td width="40%"><a href="../menu/lunch.html" target="breakfast">LUNCH</a></td>
+                    </tr>
+                  <tr>
+                    <td width="40%"><a href="../menu/dinner.html" target="breakfast">dinner</a></td>
+                    
+                  </tr>
+                </table>
+              </div>
+            </section>  
+            <hr id="booking">
+            <section>
+              <div>
+                <h1><marquee behavior="" direction="right">BOOKING</marquee></h1>
+              
+                <fieldset>
+                  <legend> Booking Details</legend>
+                  <form action="">
+                    <label for="salutation">salutation:</label>
+                    <select name="salutation" id="salutation">
+                      <option value="">--none--</option>
+                      <option value="">Mr</option>
+                      <option value="">Mrs</option>
+                      <option value="">Ms</option>
+                      <option value="">Dr.</option>
+                    </select>
+                    <br /><br />
+                    <label for="fname">first name:</label>
+                    <input type="text" name="fname" id="fname" />
+                    <br /><br />
+                    <label for="lname">Last name:</label>
+                    <input type="text" name="lname" id="lname" />
+                    <br /><br />
+                    
+                    <label for="email">email:</label>
+                    <input type="email" name="email" id="email" />
+                    <br /><br />
+                    <label for="gender">Gender: </label>
+                    <input type="radio" name="gender" id="gender" />
+                    <label for="Male">Male</label>
+                    <input type="radio" name="gender" id="gender" />
+                    <label for="female">Female</label>
+            
+                   
+                    <br /><br />
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob" />
+                    <br /><br />
+                    <label for="doc">Date And Time of Check-in:</label>
+                    <input type="datetime-local" name="doc" id="doc" required/>
+                    <br /><br />
+                    <label for="rt">Room Type:</label>
+                    <select name="rt" id="rt">
+                      <option value="">Click Me</option>
+                      <option value="">Semi-Delux</option>
+                      <option value="">Delux</option>
+                      <option value="">Royal</option>
+                      <br><br>
+                      </select>
+                      <br><br>
+                    <label for="ac">Aadhar Card:</label> <br>
+                    <input type="file" name="ac" id="ac" required/>
+                    <br><br>
+                    <label for="free"> Pickup?: </label>
+                    <input type="radio" name="free" id="free" />
+                    <label for="yes">Yes Please!</label>
+                    <input type="radio" name="free" id="free" />
+                    <label for="no">No Thanks</label>
+                    <br><br>
+                    <label for="add">Pickup Address:</label><br />
+                    <textarea name="add" id="add" cols="30" rows="3"></textarea>
+                    <br><br>
+                    <label for="add">Special Request:</label><br />
+                    <textarea name="add" id="add" cols="30" rows="3"></textarea>
+                    <br><br>
+                    <input type="submit" />
+                    <input type="reset">
+                  </form>
+                </fieldset>
+              </div>
+            </section>
+          
+            <section id="contact">
+            <div>
+                <h1><marquee behavior="" direction="">CONTACT US</marquee></h1>
+                <hr>
+                <table>
+                  <tr>
+                    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29372.56924719588!2d72.49212917431645!3d23.039513000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848ac8a8047b%3A0xb41fbacdf2139ecb!2sHyatt%20Ahmedabad!5e0!3m2!1sen!2sin!4v1691509114778!5m2!1sen!2sin" width="750" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                 <td>
+                  <h2>
+                    Contact No: 9876543210  <br> <br>
+                    Email: rimberioroyalhotel@gmail.com <br><br>
+                    Address: Rimberio Royal Hotel, Vastrapur, Ahmedabad <br>
+                    <br>
+                  </h2>
+                    <fieldset>
+                      <legend>WE WILL CONTACT YOU SOON</legend>
+                    
+                    <form action="">
+                      <br>
+                      <label for="name">Your Name:</label>
+                      <input type="text" name="name" id="name"><br><br>
+                      
+                      <label for="">Contact No.:</label>
+                      <input type="number" name="" id="contact"><br><br>
+                      <label for="mail">Email:</label>
+                      <input type="email" name="mail" id="mail"><br>
+                      <br>
+                      <input type="submit">
+                      <input type="reset">
+                    </form>
+                  </fieldset>
+                  
+                 </td>
+                  </tr>
+
+                  
+                </table>
             
             </div>
         
     </section>
+    <hr>
+    <footer>  <center>
+      Copyright @ RIMBERIO ROYAL HOTEL 2023- All Right Reserved.   </center>
+      </footer> 
+      <hr>
   </body>
 </html>
